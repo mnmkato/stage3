@@ -13,7 +13,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 1. Clone this repository to your local machine:
 ```
-git clone https://github.com/mnmkato/stge3.git
+git clone https://github.com/mnmkato/stage3.git
 ```
 
 2. Navigate to the project directory:
