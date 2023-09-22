@@ -9,42 +9,51 @@ import pic_eight from './assets/photos/pic_eight.jpg'
 import pic_nine from './assets/photos/pic_nine.jpg'
 
 const pics = [
-    {
-      photo: pic_one,
-      tags: ["Cities", "City", "Park", "Photos", "Reflection", "River", "Trees", "Urban"]
-    },
-    {
-      photo: pic_two,
-      tags: ["Cities", "City", "Landmark", "Local Landmarks", "Mobile Wallpaper", "New York", "Statue Of Liberty", "Travel Photos", "Usa", "Vertical Shot"]
-    },
-    {
-      photo: pic_three,
-      tags: ["Bicycle", "Black And White", "Cities", "City", "City Streets", "Elderly", "Garbage", "Street", "Urban", "Vertical Shot", "Woman"]
-    },
-    {
-      photo: pic_four,
-      tags: ["Aerial Photography", "Argentina", "Beach", "Buildings", "Cities", "City", "Cityscape", "Clear Sky", "Coast", "Drone Shot", "Mar Del Plata", "Mobile Wallpaper", "Sea", "Shore", "Vertical Shot"]
-    },
-    {
-      photo: pic_five,
-      tags: ["Aerial Photography", "Birds Eye View", "Cities", "City", "Drone Shot", "Lightning", "Sky", "Storm", "Thunder", "Thunderbolt", "Thunderstorm", "Weather"]
-    },
-    {
-      photo: pic_six,
-      tags: ["Australia", "Cities", "City", "City Streets", "Cityscape", "Landmark", "Local Landmarks", "Melbourne", "Melbourne Skydeck", "Modern Architecture", "Neoclassical Architecture", "Skyscraper", "Skyscrapers", "Street", "Travel Photos", "Urban"]
-    },
-    {
-      photo: pic_seven,
-      tags: ["Bottle", "Cities", "City", "Drink", "Glasses", "Sunlight", "Urban", "Window", "Windows"]
-    },
-    {
-      photo: pic_eight,
-      tags: ["Back View", "Black And White", "Buildings", "Cities", "City", "People", "Rain", "Street", "Umbrellas", "Vertical Shot", "Walking", "Zebra Crossing"]
-    },
-    {
-      photo: pic_nine,
-      tags: ["Building Exterior", "Cities", "City", "Fontanna Di Trevi", "Fountain", "Italy", "Landmark", "Local Landmarks", "Rome", "Scenic", "Sculpture", "Square Format", "Summer", "Travel Destinations", "Urban"]
-    }
-  ]
+  {
+    id: 0,
+    photo: pic_one,
+    tags: ["Park", "Photos", "Reflection", "River", "Trees", "Urban"]
+  },
+  {
+    id: 1,
+    photo: pic_two,
+    tags: ["Landmark", "New York", "Statue Of Liberty", "Usa"]
+  },
+  {
+    id: 2,
+    photo: pic_three,
+    tags: ["Bicycle",  "Elderly", "Garbage", "Woman"]
+  },
+  {
+    id: 3,
+    photo: pic_four,
+    tags: ["Argentina", "Beach", "Clear Sky", "Coast","Sea", "Shore"]
+  },
+  {
+    id: 4,
+    photo: pic_five,
+    tags: ["Lightning", "Sky", "Storm", "Thunder", "Thunderbolt", "Weather"]
+  },
+  {
+    id: 5,
+    photo: pic_six,
+    tags: ["Australia", "Landmark", "Skyscraper", "Street","Urban"]
+  },
+  {
+    id: 6,
+    photo: pic_seven,
+    tags: ["Bottle", "Drink", "Glasses", "Sunlight", "Urban", "Window", "Windows"]
+  },
+  {
+    id: 7,
+    photo: pic_eight,
+    tags: ["Buildings", "People", "Rain", "Street", "Umbrellas"]
+  },
+  {
+    id: 8,
+    photo: pic_nine,
+    tags: ["Fountain", "Italy", "Landmark", "Rome", "Scenic", "Sculpture"]
+  }
+];
 
-  export default pics
+export default pics;

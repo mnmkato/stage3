@@ -25,7 +25,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 .header{
   display: flex;
   align-items: center;
@@ -52,49 +51,50 @@ input{
   padding: 1rem;
   border-radius: 1rem;
 }
-.content{
- display: flex;
-}
+
 .gallery {
-  flex: 1;
   height: fit-content;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-  gap: 3px;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+.gallery-item{
+  background-color: #323b46;
+  border-radius: 0.5rem;
 }
 img {  
-  height: 10rem;
+  height: 20rem;
   width: 100%;
   object-fit: cover; 
-  border: 2px solid white;
   box-sizing: border-box;
 }
-
+.gallery-item-tags{
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery-item.isDragging {
+  opacity: 0.7; 
+}
 .selected-photo{
-  border: 2px solid red;
   box-sizing: border-box;
 }
 .dragged-photo {
   opacity: 0.5;
 }
-
 .hovered-photo {
-  border: 2px dashed #0074d9;
+  border: 0.3rem dashed white;
+}
+.drop-indicator {
+  background-color: lightgray; 
+  height: 20rem; 
+  margin-bottom: 1rem;
 }
 
-.tags{
-  height: fit-content;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-  grid-row-gap: 0;
-  min-height: 6rem;
-  margin: 1rem;
-  padding: 0.5rem;
-  text-align: center;
-}
 span{
-  background-color: white;
-  color: black;
+  border: 0.1rem solid white;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  color: white;
   margin: 0.3rem;
 }
 
@@ -112,8 +112,7 @@ span{
 .form-login {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  
+  text-align: left; 
 }
 .form-login div{
   width: 15rem;
@@ -123,7 +122,6 @@ span{
   display: block;
   font-weight: bold;
 }
-
 .form-login input {
   width: 100%;
   padding: 0.5rem;
@@ -140,7 +138,6 @@ span{
   font-size: 16px;
   cursor: pointer;
 }
-
 .btn-login:hover {
   background-color: #0056b3;
 }
