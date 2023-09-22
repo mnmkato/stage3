@@ -54,13 +54,15 @@ input{
 
 .gallery {
   height: fit-content;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .gallery-item{
   background-color: #323b46;
   border-radius: 0.5rem;
+  margin: 1rem;
+  width: 20rem;
 }
 img {  
   height: 20rem;

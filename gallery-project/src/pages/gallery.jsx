@@ -13,7 +13,7 @@ function Gallery() {
     filteredData: pics,
   });
   const [searchQuery, setSearchQuery] = useState('');
-  const [draggedItemId, setDraggedItemId] = useState(null); // Track the currently dragged item
+  const [draggedItemId, setDraggedItemId] = useState(null); 
 
   useEffect(() => {
     const filteredData = data.pics.filter((item) =>
@@ -72,7 +72,7 @@ function Gallery() {
           <div className="results-not-found">Results Not Found</div>
         ) : (
           <DragDropContext onDragEnd={onDragEnd}>
-            <Droppable droppableId="gallery">
+            <Droppable droppableId="gallery" direction='horizontal'>
               {(provided) => (
                 <div
                   {...provided.droppableProps}
