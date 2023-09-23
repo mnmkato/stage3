@@ -12,7 +12,7 @@ function GalleryHeader({ searchQuery, handleSearchQueryChange }) {
           <input type="search" name="query" id="search-query" placeholder='Enter tag to search'
             value={searchQuery}
             onChange={handleSearchQueryChange} />
-        <button className="search-btn">Search</button>
+        
         </form>  
         <Logout/>      
       </div>
